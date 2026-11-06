@@ -1,6 +1,7 @@
 from turtle import *
 from superturtle.animation import *
 from superturtle.movement import *
+from shapes import *
 import settings
 
 colormode(255)                                  # rgb color mode
