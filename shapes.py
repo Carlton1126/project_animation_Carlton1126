@@ -14,6 +14,9 @@ def filled_circle(circle_size, fill_color, border_colorR, border_colorG, border_
     # draws a circle of any size, color, border color and width
     # border color RGB values can be interpolated to change shades
     colormode(255)
+    print: (border_colorR)
+    print: (border_colorG)
+    print: (border_colorB)
     pencolor(border_colorR, border_colorG, border_colorB)
     # I used geeksforgeeks to find how to use rgb values
     pensize(border_width)

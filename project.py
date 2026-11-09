@@ -8,15 +8,11 @@ colormode(255)                                  # rgb color mode
 screen = Screen()
 screen.setup(settings.WIDTH, settings.HEIGHT)   # sets custom screen size
 
-bgcolor(settings.BACKGROUND_COLOR)              #sets background color 
+bgcolor(0,0,0)              #sets background color 
 
 for frame in animate(loop = True):
 
     for frame in animate(frames=settings.TOTAL_FRAMES):
         
-        pass  # delete this line and write your own code!  
-
-
-
-
-
+        border_colorG = frame.interpolate(start=165, stop=255, mirror=True)
+        filled_circle(100, "black", 255, int(border_colorG), 0, 10)
