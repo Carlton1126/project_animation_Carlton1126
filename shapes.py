@@ -19,6 +19,11 @@ def filled_circle(circle_size, fill_color, border_colorR, border_colorG, border_
     print: (border_colorB)
     pencolor(border_colorR, border_colorG, border_colorB)
     # I used geeksforgeeks to find how to use rgb values
+    penup()
+    right(90)
+    forward(circle_size)
+    left(90)
+    pendown()
     pensize(border_width)
     fillcolor(fill_color)
     begin_fill()
